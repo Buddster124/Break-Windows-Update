@@ -2,7 +2,7 @@
   This contains a power-shell script to disable, break, or restore windows update.
 
 # How to use
-  1. Save the file to your computer.
+  1. Save RemoveWindowsUpdate.ps1 to your computer.
   2. Open an administrator powershell window.
   3. Navigate to where the script is saved. (cd C:\my_path\yada_yada\)
   4. Run the script. (.\RemoveWindowsUpdate.ps1)
