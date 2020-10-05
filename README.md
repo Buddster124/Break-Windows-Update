@@ -15,6 +15,7 @@
    # Notes
    1. The dll files for windows update and bits are moved to "C:\GHTemp\SystemFiles\WindowsUpdate\". If this directory is removed after disabling windows update, You will be unable to restore windows update.
    2. I would highly recommend making a restore point before running this script.
+   3. If it complains about script policy you can ether use this tool "https://github.com/Buddster124/Powershell-Execution-Policy-Changer" or you can turn on script bypass with the following command "Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope LocalMachine". You can revert this change after running the script by doing the following command "Set-ExecutionPolicy -ExecutionPolicy Default -Scope LocalMachine" 
 
 # Roadmap
   1. Create a GUI For the script and pack it into an exe.
