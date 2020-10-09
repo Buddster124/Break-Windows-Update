@@ -10,10 +10,11 @@
    What each option does.
    1. Disable: This will disable BITS / wuauserv on start-up and it will stop the service. It will also move/rename qmgr.dll and wuaueng.dll.
    2. Renable: This will revert what the disable option did.
-   3. Destroy: This will completly remove qmgr.dll and wuaueng.dll aswell as remove the windows update service completely.
+   3a. ~~~Destroy: This will completly remove qmgr.dll and wuaueng.dll aswell as remove the windows update service completely.~~~
+   3b. At the moment this script only removes the wuauserv service. It will keep the .dll files in "C:\GHTemp\SystemFiles\WindowsUpdate\" as you will need qmgr.dll for bits to work. 
    
    # Notes
-   1. The dll files for windows update and bits are moved to "C:\GHTemp\SystemFiles\WindowsUpdate\". If this directory is removed after disabling windows update, You will be unable to restore windows update.
+   1. The .dll files for windows update and bits are moved to "C:\GHTemp\SystemFiles\WindowsUpdate\". If this directory is removed after disabling windows update, You will be unable to restore windows update.
    2. I would highly recommend making a restore point before running this script.
    3. If it complains about script policy you can ether use this tool "https://github.com/Buddster124/Powershell-Execution-Policy-Changer" or you can turn on script bypass with the following command "Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope LocalMachine". You can revert this change after running the script by doing the following command "Set-ExecutionPolicy -ExecutionPolicy Default -Scope LocalMachine".
 
