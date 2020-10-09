@@ -10,8 +10,8 @@
    What each option does.
    1. Disable: This will disable BITS / wuauserv on start-up and it will stop the service. It will also move/rename qmgr.dll and wuaueng.dll.
    2. Renable: This will revert what the disable option did.
-   3a. ~~~Destroy: This will completly remove qmgr.dll and wuaueng.dll aswell as remove the windows update service completely.~~~
-   3b. At the moment this script only removes the wuauserv service. It will keep the .dll files in "C:\GHTemp\SystemFiles\WindowsUpdate\" as you will need qmgr.dll for bits to work. 
+   3. ~~Destroy: This will completly remove qmgr.dll and wuaueng.dll aswell as remove the windows update service completely.~~
+   4. Destroy: At the moment this script only removes the wuauserv service. It will keep the .dll files in "C:\GHTemp\SystemFiles\WindowsUpdate\" as you will need qmgr.dll for bits to work. 
    
    # Notes
    1. The .dll files for windows update and bits are moved to "C:\GHTemp\SystemFiles\WindowsUpdate\". If this directory is removed after disabling windows update, You will be unable to restore windows update.
