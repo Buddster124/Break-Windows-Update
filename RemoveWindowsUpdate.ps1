@@ -8,7 +8,7 @@
 function Show-Menu
 {
     param (
-        [string]$Title = 'Windows_Update'
+        [string]$Title = 'Windows Update'
     )
     Clear-Host
     Write-Host "Script Created By: Anthony Budd"
